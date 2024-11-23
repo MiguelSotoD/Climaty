@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climaty</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <main class="main-container">
+
+        <header class="input-container">
+            <input type="text" placeholder="Busca la ciudad" class="city-input">
+            <button type="button" class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                    <h4 class="country-txt">Mexico</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Wed, 11, 2024</h5>
+            </div>
+            <div class="weather-summary-container">
+                <img src="assets/weather/clouds.svg" alt="" class="weather-summary-img">
+                <div class="weather-summary-ing">
+                    <h1 class="temp-txt">29 ℃</h1>
+                    <h3 class="condition-txt regular-txt">Nublado</h3>
+                </div>
+            </div>
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                        </span>
+                        <div class="condition-item">
+                            <h5 class="regular-txt">Humedad</h5>
+                            <h5 class="humidity-value-txt">50%</h5>
+                        </div>
+                </div>
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                        </span>
+                        <div class="condition-item">
+                            <h5 class="regular-txt">Velocidad viento</h5>
+                            <h5 class="wind-value-txt">5K/s</h5>
+                        </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <!-- Content of the cards -->
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img src="assets/message/search-city.png" class="message-img" draggable="false">
+             <div>
+            <h1>Buscar ciudad</h1>
+            <h4 class="regular-txt">Ingresa el nombre de la ciudad para obtener el clima actual.
+            </h4>
+
+             </div>
+        </section>
+        <section class="not-found section-message" style="display: none;">
+            <img src="assets/message/not-found.png" draggable="false">
+             <div>
+            <h1>Error de busqueda</h1>
+            <h4 class="regular-txt">Ingresa el nombre de la ciudad correcto para obtener el clima actual.
+            </h4>
+
+             </div>
+        </section>
+    </main>
+
+</body>
+</html>
